@@ -8,12 +8,12 @@ jobs:
     steps: 
       # 1er job pr dire PUSH
       - name: "PUSH"
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event == 'push' }}
         run: echo "c'est un push!"
   check_pull_request:
     runs-on: ubuntu-latest
     steps: 
       # 2eme job pr dire PULL_REQUEST
       - name: "PULL_REQUEST"
-        if: ${{github.event_name == 'pull_request'}}
+        if: ${{github.event == 'pull_request'}}
         run: echo "c'est une pull request!"
