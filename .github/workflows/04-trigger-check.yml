@@ -6,7 +6,7 @@ env:
   TRIGGER: github.event_name
 
 jobs: 
-  check_pull_push_request:
+  check_pull_push:
     runs-on: ubuntu-latest
     steps: 
       # 1er job pr dire PUSH
@@ -15,8 +15,7 @@ jobs:
         run: echo "c'est un push!"
 
 
-jobs: 
-  check_pull_push_request:
+  check_pull_puLL_request:
     runs-on: ubuntu-latest
     steps: 
       # 2eme job pr dire PULL_REQUEST
