@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       # 1er job pr dire PUSH
+      - name: "afficher var"
+        run: echo $github.event
       - name: "PUSH"
         if: github.event == 'push' 
         run: echo "c'est un push!"
