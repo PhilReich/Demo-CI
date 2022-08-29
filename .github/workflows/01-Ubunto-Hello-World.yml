@@ -1,0 +1,23 @@
+# pipeline de base pour s'entraîner
+
+name: 01-Ubunto-Hello-World
+
+# trigger pour déclencher les actions lors des push
+on: [push]
+
+#liste des jobs
+jobs: 
+  # 1er job
+  check-bats-version:
+    #def du renner (ubuntu lastversion)
+    runs-on: ubuntu-latest
+    # déclaration de la liste des steps
+    steps:
+      # action par defaut qui permet de recuperer le code du repo
+      - uses: actions/checkout@v3
+        # affiche        
+      - run : echo hello world
+      # on utilise la commande qui retourne la version de bats
+
+
+           
