@@ -8,7 +8,9 @@ jobs:
     steps: 
       # 1er job pr dire PUSH
       - name: "afficher var"
-        run: echo $github.event
+        env:
+          TRIGGER: github.event
+        run: echo TRIGGER
   check_push:
     runs-on: ubuntu-latest
     steps: 
