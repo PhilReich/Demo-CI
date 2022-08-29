@@ -10,7 +10,7 @@ jobs:
       - name: "afficher var"
         env:
           TRIGGER: github.event
-        run: echo TRIGGER
+        run: echo $TRIGGER
   check_push:
     runs-on: ubuntu-latest
     steps: 
