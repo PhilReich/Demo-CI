@@ -13,5 +13,5 @@ jobs:
         if: ${{ env.NAME != 'Phil' }}
         run: echo "tu nes pas Phil!!!"
       - name: "dis bonjour Phil"
-        if: ${{env.NAME == "Phil"}}
+        if: ${{env.NAME == 'Phil'}}
         run: echo "Salut Phil!"
