@@ -1,4 +1,4 @@
-name: env-var-demo
+name: trigger_check
 
 on: workflow_dispatch
 
