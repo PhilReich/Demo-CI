@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "dis bonjour"
-        if: ${{env.NAME != 'Phil'}}
+        if: ${{ env.NAME != 'Phil' }}
         run: echo "tu nes pas Phil!!!"
       - name: "dis bonjour Phil"
-        if: ${{env.NAME == 'Phil'}}
+        if: ${{ env.NAME == 'Phil'}}
         run: echo "Salut Phil!"
