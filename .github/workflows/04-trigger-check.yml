@@ -3,12 +3,16 @@ name: trigger_check
 on: workflow_dispatch
 
 jobs: 
-  check_push:
+  check_name:
     runs-on: ubuntu-latest
     steps: 
       # 1er job pr dire PUSH
       - name: "afficher var"
         run: echo $github.event
+  check_push:
+    runs-on: ubuntu-latest
+    steps: 
+      # 1er job pr dire PUSH
       - name: "PUSH"
         if: github.event == 'push' 
         run: echo "c'est un push!"
