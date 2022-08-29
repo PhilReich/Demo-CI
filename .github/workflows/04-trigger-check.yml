@@ -8,8 +8,6 @@ jobs:
     steps: 
       # 1er job pr dire PUSH
       - name: "afficher var"
-        env:
-          TRIGGER: github.event_name
         run: echo ${{github.event_name}}
   check_push:
     runs-on: ubuntu-latest
