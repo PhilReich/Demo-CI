@@ -14,5 +14,5 @@ jobs:
   
     steps:
       - name: afficher qui fait quoi
-        run: echo matrix.nom matrix.action matrix.fruit "et aime ça  :)""
+        run: echo "${{matrix.nom}} ${{matrix.action}} ${{matrix.fruit}} et aime ça  :) "
 
