@@ -1,0 +1,15 @@
+name: trigger_event3
+
+on:
+  workflow_run:
+    workflows:
+      - "trigger_event2"
+    types:
+      - completed
+
+jobs:
+  afficher_workflow_precedent_fini:
+    runs-on: ubuntu-latest
+    steps:
+      - name: terminé
+        run: echo "Le workflow précédent est terminé!"
