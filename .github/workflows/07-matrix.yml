@@ -6,6 +6,7 @@ jobs:
   example_matrix:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: true
       matrix:
         nom: [Rémi, Samir, Kévin, Nacim, Claire]
         action: [croque, s'enfile, lèche, croque, suce]
