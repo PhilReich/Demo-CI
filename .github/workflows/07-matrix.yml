@@ -1,4 +1,4 @@
-name: demo runner
+name: matrix
 
 on:  workflow_dispatch
 
