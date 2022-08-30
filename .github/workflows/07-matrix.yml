@@ -8,9 +8,9 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        nom: [Rémi, Samir, Kévin, Nacim, Claire]
-        action: [croque, s'enfile, lèche, croque, suce]
-        fruit: [une carotte, une banane, une tomate, un melon, un concombre]
+        nom: [Rémi, Kévin, Nacim, Claire]
+        action: [croque, s'enfile, lèche, suce]
+        fruit: [une carotte, une banane, une tomate, un concombre]
   
     steps:
       - name: afficher qui fait quoi
