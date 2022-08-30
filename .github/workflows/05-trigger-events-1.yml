@@ -1,10 +1,12 @@
 name: trigger_event
 
-on: workflow_dispatch
+on:
+  issues:
+    types:
+      - opened
 
 jobs: 
   check_issue_created:
-    if: ${{github.issue.action == 'openened' }} 
     runs-on: ubuntu-latest
     steps: 
       # 1er job pr tester
