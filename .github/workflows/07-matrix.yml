@@ -1,0 +1,17 @@
+name: demo runner
+
+on:  workflow_dispatch
+
+jobs:
+  example_matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        nom: [Rémi, Samir, Kévin, Nacim, Claire]
+        action: [croque, s'enfile, lèche, croque, suce]
+        fruit: [une carotte, une banane, une tomate, un melon, un concombre]
+        genre: [il, il, il, il elle]      
+    steps:
+      - name: afficher qui fait quoi
+        run: echo ${{matrix.nom, matrix.action, matrix.fruit, et matrix.genre aime ça!}}
+
