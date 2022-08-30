@@ -1,4 +1,4 @@
-name: trigger_event
+name: trigger_event1
 
 on:
   issues:
