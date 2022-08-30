@@ -23,7 +23,7 @@ jobs:
           # chelin de l'artifact (dans le runner)
           path: artifact.txt
 
-    # second job pour récupérer l'artifact produit par le premier job
+    # second job pour récupérer l'artifact produit par le premier  job
   download:
     name: download
     # doit s'executer APRES le premier job
