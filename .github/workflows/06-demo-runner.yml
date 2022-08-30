@@ -1,0 +1,24 @@
+name: demo runner
+
+on:  workflow_dispatch
+    # workflows:
+    #   - "trigger_event2"
+    # types:
+    #   - completed
+jobs:
+  # nom du 1er job
+  upload:
+    name: upload
+    runs-on: ubuntu-latest
+    steps:
+      # nom du step
+      - name: créer le fichier
+      # commande pour créer un fichier
+        run: echo "coucou c'est l'artifact" > artifact.txt
+      - name: upload artifact.txt
+        # action pour générer l'artifact
+        uses: action/upload-artifact@v3
+        with:
+          name: artifact
+          # chelin de l'artifact (dans le runner)
+          path: artifact.txt
