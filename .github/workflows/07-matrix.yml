@@ -13,5 +13,5 @@ jobs:
         genre: [il, il, il, il elle]      
     steps:
       - name: afficher qui fait quoi
-        run: echo ${{matrix.nom matrix.action matrix.fruit et matrix.genre aime ça  :)}}
+        run: echo matrix.nom matrix.action matrix.fruit "et" matrix.genre "aime ça  :)""
 
